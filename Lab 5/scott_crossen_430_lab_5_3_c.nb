@@ -1,0 +1,345 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10401,        335]
+NotebookOptionsPosition[      9817,        310]
+NotebookOutlinePosition[     10159,        325]
+CellTagsIndexPosition[     10116,        322]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"ynew", "[", "J", "]"}], "=", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"2", "+", 
+      RowBox[{"gam", " ", "tau"}]}]], 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"4", " ", 
+       RowBox[{"y", "[", "J", "]"}]}], "-", 
+      RowBox[{"2", " ", 
+       RowBox[{"yold", "[", "J", "]"}]}], "+", 
+      RowBox[{"gam", " ", "tau", " ", 
+       RowBox[{"yold", "[", "J", "]"}]}], "+", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"c", "^", "2"}], " ", 
+         RowBox[{"tau", "^", "2"}]}], 
+        RowBox[{"h", "^", "2"}]], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"y", "[", 
+          RowBox[{"J", "+", "1"}], "]"}], "-", 
+         RowBox[{"2", " ", 
+          RowBox[{"y", "[", "J", "]"}]}], "+", 
+         RowBox[{"y", "[", 
+          RowBox[{"J", "-", "1"}], "]"}]}], ")"}]}]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"v", "[", "J", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"ynew", "[", "J", "]"}], "-", 
+      RowBox[{"yold", "[", "J", "]"}]}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{"2", " ", "tau"}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"%", " ", "&&", " ", "%%"}], ",", "yold"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6636160441780167`*^9, 3.6636162229855413`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Solve", "::", "naqs"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(\\(\\(\\(-\\(\\(yold[J]\\)\\)\\)\\) + \
+\\(\\(\\(4\\\\ \\(\\(y[J]\\)\\)\\)\\) + \\(2\\\\ c\\^2\\\\ \\(\\(\
+\[LeftSkeleton] 1 \[RightSkeleton]\\)\\)\\\\ \\(\\((\\(\[LeftSkeleton] 1 \
+\[RightSkeleton]\\))\\)\\)\\)\\/h\\^2 - \\(\\(2\\\\ \\(\\(yold[J]\\)\\)\\)\\) \
++ \\(\\(gam\\\\ tau\\\\ \\(\\(yold[J]\\)\\)\\)\\)\\)\\/\\(2 + \\(\\(gam\\\\ \
+tau\\)\\)\\)\\)\\/\\(2\\\\ tau\\) && \\(\\(\\(4\\\\ \\(\\(y[J]\\)\\)\\)\\) + \
+\\(2\\\\ c\\^2\\\\ tau\\^2\\\\ \\(\\((\\(\\(y[\\(\\(\\(\\(-1\\)\\) + J\\)\\)]\
+\\)\\) - \\(\\(2\\\\ \\(\\(y[J]\\)\\)\\)\\) + \\(\\(y[\\(\\(1 + \
+J\\)\\)]\\)\\))\\)\\)\\)\\/h\\^2 - \\(\\(2\\\\ \\(\\(yold[J]\\)\\)\\)\\) + \
+\\(\\(gam\\\\ tau\\\\ \\(\\(yold[J]\\)\\)\\)\\)\\)\\/\\(2 + \\(\\(gam\\\\ tau\
+\\)\\)\\)\\)\[NoBreak] is not a quantified system of equations and \
+inequalities. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Solve\\\", ButtonNote -> \\\"Solve::naqs\\\"]\\)\"\
+\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.6636162204513016`*^9, 3.663616223585361*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"yold", "[", "J", "]"}]}], "+", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"4", " ", 
+         RowBox[{"y", "[", "J", "]"}]}], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["c", "2"], " ", 
+          SuperscriptBox["tau", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"y", "[", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "J"}], "]"}], "-", 
+            RowBox[{"2", " ", 
+             RowBox[{"y", "[", "J", "]"}]}], "+", 
+            RowBox[{"y", "[", 
+             RowBox[{"1", "+", "J"}], "]"}]}], ")"}]}], 
+         SuperscriptBox["h", "2"]], "-", 
+        RowBox[{"2", " ", 
+         RowBox[{"yold", "[", "J", "]"}]}], "+", 
+        RowBox[{"gam", " ", "tau", " ", 
+         RowBox[{"yold", "[", "J", "]"}]}]}], 
+       RowBox[{"2", "+", 
+        RowBox[{"gam", " ", "tau"}]}]]}], 
+     RowBox[{"2", " ", "tau"}]], "&&", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"4", " ", 
+       RowBox[{"y", "[", "J", "]"}]}], "+", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        SuperscriptBox["c", "2"], " ", 
+        SuperscriptBox["tau", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"y", "[", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "J"}], "]"}], "-", 
+          RowBox[{"2", " ", 
+           RowBox[{"y", "[", "J", "]"}]}], "+", 
+          RowBox[{"y", "[", 
+           RowBox[{"1", "+", "J"}], "]"}]}], ")"}]}], 
+       SuperscriptBox["h", "2"]], "-", 
+      RowBox[{"2", " ", 
+       RowBox[{"yold", "[", "J", "]"}]}], "+", 
+      RowBox[{"gam", " ", "tau", " ", 
+       RowBox[{"yold", "[", "J", "]"}]}]}], 
+     RowBox[{"2", "+", 
+      RowBox[{"gam", " ", "tau"}]}]]}], ",", "yold"}], "]"}]], "Output",
+ CellChangeTimes->{{3.663616220452301*^9, 3.66361622358836*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"ynew", "[", "J", "]"}], "-", 
+       RowBox[{
+        FractionBox["1", 
+         RowBox[{"2", "+", 
+          RowBox[{"gam", " ", "tau"}]}]], 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", " ", 
+           RowBox[{"y", "[", "J", "]"}]}], "-", 
+          RowBox[{"2", " ", 
+           RowBox[{"yold", "[", "J", "]"}]}], "+", 
+          RowBox[{"gam", " ", "tau", " ", 
+           RowBox[{"yold", "[", "J", "]"}]}], "+", 
+          RowBox[{
+           FractionBox[
+            RowBox[{"2", " ", 
+             RowBox[{"c", "^", "2"}], " ", 
+             RowBox[{"tau", "^", "2"}]}], 
+            RowBox[{"h", "^", "2"}]], 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"y", "[", 
+              RowBox[{"J", "+", "1"}], "]"}], "-", 
+             RowBox[{"2", " ", 
+              RowBox[{"y", "[", "J", "]"}]}], "+", 
+             RowBox[{"y", "[", 
+              RowBox[{"J", "-", "1"}], "]"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+     "/", 
+     RowBox[{"(", 
+      RowBox[{"2", " ", "tau"}], ")"}]}], "==", 
+    RowBox[{"v", "[", "J", "]"}]}], ",", 
+   RowBox[{"yold", "[", "J", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.663616235740713*^9, 3.663616298828781*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"yold", "[", "J", "]"}], "\[Rule]", 
+    FractionBox[
+     RowBox[{
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"y", "[", "J", "]"}]}], 
+       RowBox[{"tau", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", 
+          RowBox[{"gam", " ", "tau"}]}], ")"}]}]], "+", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["c", "2"], " ", "tau", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"y", "[", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "J"}], "]"}], "-", 
+          RowBox[{"2", " ", 
+           RowBox[{"y", "[", "J", "]"}]}], "+", 
+          RowBox[{"y", "[", 
+           RowBox[{"1", "+", "J"}], "]"}]}], ")"}]}], 
+       RowBox[{
+        SuperscriptBox["h", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", 
+          RowBox[{"gam", " ", "tau"}]}], ")"}]}]]}], 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"2", " ", "tau"}]], "-", 
+      FractionBox["gam", 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", 
+          RowBox[{"gam", " ", "tau"}]}], ")"}]}]], "+", 
+      FractionBox["1", 
+       RowBox[{"tau", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", 
+          RowBox[{"gam", " ", "tau"}]}], ")"}]}]]}]]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.6636162869953327`*^9, 3.6636163000944014`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{"2", " ", 
+      RowBox[{"y", "[", "J", "]"}]}], 
+     RowBox[{"tau", " ", 
+      RowBox[{"(", 
+       RowBox[{"2", "+", 
+        RowBox[{"gam", " ", "tau"}]}], ")"}]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["c", "2"], " ", "tau", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"y", "[", 
+         RowBox[{
+          RowBox[{"-", "1"}], "+", "J"}], "]"}], "-", 
+        RowBox[{"2", " ", 
+         RowBox[{"y", "[", "J", "]"}]}], "+", 
+        RowBox[{"y", "[", 
+         RowBox[{"1", "+", "J"}], "]"}]}], ")"}]}], 
+     RowBox[{
+      SuperscriptBox["h", "2"], " ", 
+      RowBox[{"(", 
+       RowBox[{"2", "+", 
+        RowBox[{"gam", " ", "tau"}]}], ")"}]}]]}], 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"2", " ", "tau"}]], "-", 
+    FractionBox["gam", 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{"2", "+", 
+        RowBox[{"gam", " ", "tau"}]}], ")"}]}]], "+", 
+    FractionBox["1", 
+     RowBox[{"tau", " ", 
+      RowBox[{"(", 
+       RowBox[{"2", "+", 
+        RowBox[{"gam", " ", "tau"}]}], ")"}]}]]}]], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.663616307919053*^9, 3.663616310045415*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"2", " ", 
+    SuperscriptBox["h", "2"], " ", 
+    RowBox[{"y", "[", "J", "]"}]}], "+", 
+   RowBox[{
+    SuperscriptBox["c", "2"], " ", 
+    SuperscriptBox["tau", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"y", "[", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "J"}], "]"}], "-", 
+      RowBox[{"2", " ", 
+       RowBox[{"y", "[", "J", "]"}]}], "+", 
+      RowBox[{"y", "[", 
+       RowBox[{"1", "+", "J"}], "]"}]}], ")"}]}]}], 
+  RowBox[{"2", " ", 
+   SuperscriptBox["h", "2"]}]]], "Output",
+ CellChangeTimes->{3.6636163103863125`*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 873},
+WindowMargins->{{Automatic, 568}, {44, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1403, 44, 147, "Input"],
+Cell[1986, 68, 1205, 20, 117, "Message"],
+Cell[3194, 90, 1940, 57, 131, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5171, 152, 1326, 39, 177, "Input"],
+Cell[6500, 193, 1406, 45, 73, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7943, 243, 1249, 42, 73, "Input"],
+Cell[9195, 287, 606, 20, 84, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
